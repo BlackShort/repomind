@@ -1,8 +1,9 @@
 import os
 from groq import Groq
 from app.pipeline.vectorstore import get_retriever
+from app.config import GROQ_API_KEY
 
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+client = Groq(api_key=GROQ_API_KEY)
 
 SYSTEM_PROMPT = """You are RepoMind, an expert code assistant that helps developers understand codebases.
 

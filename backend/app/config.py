@@ -3,11 +3,10 @@ import os
 
 load_dotenv()
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 CHROMA_PERSIST_DIR = os.getenv("CHROMA_PERSIST_DIR", "./chroma_db")
 REPOS_TEMP_DIR = os.getenv("REPOS_TEMP_DIR", "./tmp_repos")
 MAX_REPO_SIZE_MB = int(os.getenv("MAX_REPO_SIZE_MB", 50))
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 SUPPORTED_EXTENSIONS = {
     ".py", ".js", ".ts", ".jsx", ".tsx",
